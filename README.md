@@ -33,10 +33,16 @@ typedef struct Triangle {
 ## Use
 
 ```
-  1. complie
-  2. put the vphys file you extract from (.vpk) map file.
-  3. modify `vphys_parser.cpp` to set the file name of input and output
+  1. Compile: g++ -std=c++17 -o vphys_parser vphys_parser.cpp
+  2. Place your .vphys files in the input/ directory
+  3. Run: ./vphys_parser
+  4. Find your .tri files in the output/ directory
 ```
+
+### Directory Structure
+- `input/` - Place your .vphys files here
+- `output/` - Generated .tri files will be saved here
+- Both directories are automatically created if they don't exist
 
 ## Coding Visibility Check
 !!Start ur game with `-insecure` unless you want VAC!!

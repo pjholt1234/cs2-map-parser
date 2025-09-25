@@ -1,0 +1,23 @@
+# Ignore input and output directories
+input/
+output/
+
+# Ignore compiled binaries
+vphys_parser
+*.exe
+*.o
+*.obj
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore temporary files
+*.tmp
+*.temp
