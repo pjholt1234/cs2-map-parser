@@ -1,0 +1,8 @@
+Description,player 1 x,player 1 y,player 1 z,player 2 x,player 2 y,player 2 z,los
+Cave To B Wall,334,1.7,217,848,363,190,TRUE
+Cave To B Site,334,1.7,217,997,-70,194,FALSE
+Spawn To Spawn,-350,-2293,-99,-559,1771,90,FALSE
+Donut To Temple entrance,-1175.96,-325.35,167.42,-1654.07,1187.91,115.77,TRUE
+Aim Main To Big box,-2180.94,98.52,136.03,-1631.99,1174.47,115.98,FALSE
+Redroom To bottom mid,-480,661,202,-744,-879,97,TRUE
+Below Tetris To Cave entrance,-307.64,-846.42,96.46,140.08,-790.58,217.03,FALSE

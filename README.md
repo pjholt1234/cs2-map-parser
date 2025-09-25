@@ -32,6 +32,7 @@ typedef struct Triangle {
 
 ## Use
 
+### C++ Parser (Convert .vphys to .tri)
 ```
   1. Compile: g++ -std=c++17 -o vphys_parser vphys_parser.cpp
   2. Place your .vphys files in the input/ directory
@@ -39,10 +40,42 @@ typedef struct Triangle {
   4. Find your .tri files in the output/ directory
 ```
 
+### Python Visualization (View .tri files in 3D)
+```
+  1. Install dependencies: pip install -r requirements.txt
+  2. Run visualization: python3 open3d_viewer.py [path_to_tri_file] [los_tests.csv]
+```
+
 ### Directory Structure
 - `input/` - Place your .vphys files here
 - `output/` - Generated .tri files will be saved here
 - Both directories are automatically created if they don't exist
+
+## Python Visualization Features
+
+The Open3D visualization provides:
+
+- **High-Performance 3D Viewer**: GPU-accelerated rendering for smooth navigation
+- **Large Mesh Support**: Handles 960k+ triangles without performance issues
+- **LOS Test Visualization**: Overlay line-of-sight test points and connections
+- **Professional 3D Rendering**: Industry-standard visualization with lighting and materials
+
+### Usage Examples
+```bash
+# View map only
+python3 open3d_viewer.py output/de_ancient.tri
+
+# View map with LOS tests
+python3 open3d_viewer.py output/de_ancient.tri los-tests.csv
+```
+
+### Navigation Controls
+- **Mouse**: Rotate view
+- **Mouse Wheel**: Zoom in/out  
+- **Right-click drag**: Pan view
+- **R**: Reset view
+- **F**: Fit view to all geometry
+- **ESC**: Exit viewer
 
 ## Coding Visibility Check
 !!Start ur game with `-insecure` unless you want VAC!!
